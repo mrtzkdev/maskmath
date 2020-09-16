@@ -595,19 +595,19 @@
       </label>
 
       <label class="row half bigsplash">
-        <div>Mask Effectiveness on Exhale: <span class="dotted">{{convertToPercent(eout)}}</span>%</div>
+        <div>Effektivität der Masken beim Ausatmen: <span class="dotted">{{convertToPercent(eout)}}</span>%</div>
         <slider v-model="eout" :min="0" :max="0.99" :step="0.01"></slider>
       </label>
 
       <label class="row half bigsplash">
-        <div>Mask Effectiveness on Inhale: <span class="dotted">{{convertToPercent(ein)}}</span>%</div>
+        <div>Effektivität der Masken beim Einatmen: <span class="dotted">{{convertToPercent(ein)}}</span>%</div>
         <slider v-model="ein" :min="0" :max="0.99" :step="0.01"></slider>
       </label>
 
       <graph :traces="graph3Traces" :layout="graph3Layout(
-        'How Masks Reduce Infections',
-        'Percentage of People Who Wear Masks',
-        'Percentage of People Who Will Be Infected'
+        'Wie Masken Infektionen verringern',
+        'Anteil an Menschen die Masken tragen',
+        'Anteil an Menschen die infiziert werden'
       )" :config="config"></graph>
 
     </div>
@@ -616,54 +616,54 @@
   <div class="container">
 
     <p>
-      This hill-shaped curve shows us how masks influence the size of an epidemic.
-      <b>As more people wear masks, the number of infections plummet.</b>
+      Diese Berg-förmige Kurve zeigt wie Masken das Ausmaß einer Epedemie beeinflussen.
+      <b>Wenn mehr Menschen Masken tragen, sinkt die Anzahl an Infektionen rapide ab.</b>
     </p>
 
     <p>
-      When very few people wear masks, we're at the top of the hill, and most people will eventually get infected.
-      But every step to the right moves us further down.
-      So even partially effective masks, when partially adopted, can help reduce the spread of COVID-19.
+      Wenn wenig Menschen Masken tragen, befinden wir uns auf der Spitze des Berges und der Großteil der Menschen wird schlussendlich infiziert.
+      Aber jeder Schritt nach rechts, bewegt uns weiter nach unten.
+      So sogar teilweise effektive Masken, teilweise verbreitet, können helfen die Ausbreitung von COVID-19 verringern.
     </p>
 
     <p>
-      To completely stop the spread, we need to get to the bottom of this hill.
-      But there's a silver lining: as more people wear masks, the hill grows steeper.
-      Which means <b>masks provide greater returns to society as more people wear them</b>.
+      Um die Ausbreitung komplett zu stoppen, müssen wir das Tal dieses Berges erreichen.
+      Aber es gibt einen Lichtblick: Der Berg wird steiler, umso mehr Menschen Masken tragen.
+      Was bedeutet, dass <b>Masken einen größeren gesellschaftlichen Beitrag leisten, je mehr Leute sie tragen</b>.
     </p>
 
     <p>
-      If enough people wear masks, we can reach the bottom of the hill, where the chance of infection is zero.
-      This is how masks can end an epidemic.
-      But masks can only end an epidemic if enough people wear them.
+      Wenn genug Menschen Masken tragen, wir können das Tal erreichen, wo es keine Wahrscheinlichkeit gibt, sich zu infizieren. 
+      So können Masken eine Epedemie beenden.
+      Jedoch schaffen sie das nur, wenn genug Menschen Masken tragen.
     </p>
 
     <p>
-      You might wonder how many people have to wear masks to end an epidemic.
-      Well, that depends on how effective the masks are.
+	  Du fragst dich vielleicht, wie viele Menschen Masken tragen müssen um eine Epedemie zu stoppen.
+      Das ist abhängig davon, wie effektiv die Masken sind.
     </p>
 
     <p>
-      By playing with interactive above, you'll see that if masks were 50% effective, we'd need roughly three-quarters of the population to wear them to stop the spread of COVID-19.
-      But if masks were 75% effective, we'd only need half the population to wear them to stop the spread.
+      Wenn du oben an den Reglern drehst, wirst du sehen, dass ungefähr dreiviertel der Bevölkerung Masken tragen müssten um die Ausbreituing von COVID-19 zu stoppen, wenn die Masken eine Effektivität von 50% hätten.
+      Wenn Masken jedoch eine Effektivität von 75% hätten, müsste nur die Hälfte der Bevölkerung sie tragen um die Ausbreitung zu stoppen. 
     </p>
 
     <p>
-      <b>The more effective the mask, the faster we can descend the hill.</b>
-      That's why it's important to wear a mask that <a href="https://static1.squarespace.com/static/5e8126f89327941b9453eeef/t/5ea3b5859bc8f31a11f3deb5/1587787141808/2020-04-24_N95DECON_Face_Mask_Technical_Report_v1_final.pdf">tightly seals your mouth <i>and</i> nose</a>, and is made from an effective filtering material.
+      <b>Je effektiver die Maske, desto schneller sind wir über den Berg.</b>
+      Deswegen ist es wichtig eine Maske zu tragen, die <a href="https://static1.squarespace.com/static/5e8126f89327941b9453eeef/t/5ea3b5859bc8f31a11f3deb5/1587787141808/2020-04-24_N95DECON_Face_Mask_Technical_Report_v1_final.pdf">deinen Mund <i>und</i> Nase</a> dicht abschließt, und aus einem effektiven Filtermaterial besteht.
     </p>
 
     <p>
-      We all want to get to the bottom of the hill and stop the spread of COVID-19.
-      But you can't get there by yourself.
-      Each person can only take a tiny step downwards.
+      Wir alle wollen die Ausbreitung von COVID-19 stoppen.
+      Aber das schafft niemand alleine.
+      Jeder einzelne kann aber einen kleinen Schritt dazu beitragen.
     </p>
 
-    <p>However, when many people take this small step, together, we take a giant leap down the hill.</p>
+    <p>Wenn viele diesen kleinen Schritt tun, schaffen wir gemeinsam einen großen Sprung. </p>
 
-    <p>Together, we can get to the bottom of the hill.</p>
+    <p>Zusammen schaffen wir es ins Tal</p>
     
-    <p>Together, we can hit the brakes on COVID-19.</p>
+    <p>Zusammen können wir die Bremse von COVID-19 treten.</p>
 
   </div>
 
